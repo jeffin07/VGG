@@ -1316,7 +1316,7 @@ function download_all_region_data(type) {
  
   //Jeffins edit
   var all_region_data_blob = new Blob(all_region_data, blob_attr);
-  save_data_to_local_file(all_region_data_blob, name+'.'+type);
+  save_data_to_local_file(all_region_data_blob, jsonName);
   //save_data_to_local_file(all_region_data_blob, 'via_region_data.'+type);
 }
 
