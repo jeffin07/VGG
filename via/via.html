@@ -1310,8 +1310,10 @@ function download_all_region_data(type) {
   var min=date.getMinutes().toString();
   min=min+"min";
   var finalTime=time+"hrs";
+  var pathoffiel=document.getElementById("invisible_file_input").files[0].name
+  var catname=pathoffiel.split("_")
   var finalMin=min+timeMode;
-  var name=finalTime+"_"+finalMin+"_"+day+"_"+finalMonth;
+  var name=catname[0]+"_"+finalTime+"_"+finalMin+"_"+day+"_"+finalMonth;
   var jsonName=name+"."+type;
  
   //Jeffins edit
